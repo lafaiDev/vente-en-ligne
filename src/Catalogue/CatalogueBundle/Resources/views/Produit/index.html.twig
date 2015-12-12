@@ -1,0 +1,206 @@
+{% extends '::baseAdmin.html.twig' %}
+
+
+{% block body %}
+    <!-- fichier de l'administration des produit et produit action
+    dans le block stylesheet j'ai define les fonction ajax pour la gestion des produit
+-->
+
+    {{ parent() }}
+    {% include 'CatalogueBundle:Produit:modals.html.twig' %}
+    <div class="span8">
+            <h2>Liste des produits</h2>
+
+            <!--a class="btn btn-primary" href="{#{ path('produit_new') }#}"-->
+            <a class="btn btn-primary" href="#add_produit" class="btn btn-info btn-small" role="button" data-toggle="modal">
+                ajouter un produit
+            </a>
+
+            <br/>
+        <div id="produit_tab">
+            <table class="table-striped table-bordered table-hover" style="margin-top: 30px;width: 600px;" id="produit_tab">
+                <thead>
+                    <tr>
+
+                        <th style="width: 450px;">Libelle</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% if entities|length == 0 %}
+                    <tr>
+                        <td colspan="4"><center>Aucun articles dans votre site</center></td>
+                    </tr>
+                {% endif %}
+                {% for entity in entities %}
+                    <tr>
+
+                        <td>{{ entity.libelle }}</td>
+                        <td >
+
+
+                            <a  class="btn btn-danger btn-sm" id="{{ entity.id }}" onclick="supprimerproduit({{ entity.id }})"> <span class="icon-trash "></span></a>
+                            <a  class="btn btn-info btn-sm" id="{{ entity.id }}" role="button" data-toggle="modal" href="#edit_produit_{{ entity.id }}" onclick="editerproduit({{ entity.id }})"><span class="icon-pencil"></span></a>
+
+                    <!-- modals pour editer les produits-->
+                            <div id="edit_produit_{{ entity.id }}" class="modal fade" tabindex="-1" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title">Editer produit</h4>
+                                        </div>
+                                        <div class="modal-body">
+
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                                            <button type="button" class="btn btn-primary" id="add_save_produit_{{ entity.id }}"
+                                                    onclick="editerproduitSave({{ entity.id }})">update</button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+
+                            </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+
+    <script>
+         /* fonction qui affiche le  formulaire dans le modal le formulaire vide fait l'appele a l'action new produit*/
+        $('a[href=#add_produit]').click(function(){
+            $.ajax({
+                type: "GET",
+                url: "{{ path('produit_new') }}",
+                cache: false,
+                beforeSend: function() {
+                    if ($(".loading").length == 0) {
+                        $("form").parent().append('<div class="loading"></div>');
+                    }
+
+                },
+                success: function(data){
+                    $('#add_produit').find('.modal-body').html(data);
+                    $(".loading").remove();
+                }
+            });
+        });
+
+
+
+        //fonction enregestrement des donnees du produit
+            $('#add_save_produit').on('click', function (e) {
+                // On empêche le navigateur de soumettre le formulaire
+                e.preventDefault();
+
+                var $form = $("#add_produit").find('.modal-body').find('form');
+                var formdata = (window.FormData) ? new FormData($form[0]) : null;
+                var data = (formdata !== null) ? formdata : $form.serialize();
+
+                $.ajax({
+                    type: "POST",
+                    url: "{{ path('produit_create') }}",
+                    contentType: false, // obligatoire pour de l'upload
+                    processData: false, // obligatoire pour de l'upload
+                    dataType: 'json', // selon le retour attendu
+                    data: data,
+                    success: function (data) {
+                        $('#add_produit').modal('hide');//supprimer la modals
+                        $('#produit_tab').html(data.vue);
+                    }
+                });
+            });
+
+
+
+        //enregerstrer des produit
+        $('#add_save_produit1').on("click",function(){
+            $.ajax({
+                type: "POST",
+                url: "{{ path('produit_create') }}",
+                contentType: false, // obligatoire pour de l'upload
+                processData: false, // obligatoire pour de l'upload
+                //dataType: 'json', // selon le retour attendu
+                data: $("#add_produit").find('.modal-body').find('form').serialize(),
+                cache: false,
+                success: function(data){
+                    $('#add_produit').modal('hide');//supprimer la modals
+                    $('#produit_tab').html(data.vue);
+
+
+                }
+            });
+            return false;
+        });
+
+
+        //supprimer un produit de la table des produits
+        function supprimerproduit(id){
+            confirm('voulez vous vraiment supprimer !!');
+            var url = "{{ path('produit_delete', {'id': 'ident'}) }}";
+            //j'ai fait la concatenation pour que l'ajax accepte un var passer par js
+            var url = url.replace("ident", id);
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                cache: false,
+                success: function(data){
+                    //miss a jour de la table des produits
+                    $('#produit_tab').html(data.vue);
+                }
+            });
+            return false;
+        }
+
+        //editer un produit
+        /* fonction qui afiche le  formulaire dans le modal*/
+       function editerproduit(id){
+           var url = "{{ path('produit_edit', {'id': 'ident'}) }}";
+           var url = url.replace("ident", id);
+            $.ajax({
+                type: "GET",
+                url: url,
+                cache: false,
+                success: function(data){
+                    $('#edit_produit_'+id).find('.modal-body').html(data);
+                }
+            });
+        }
+
+
+        //enregester la modification
+       function editerproduitSave(id){
+           var url = "{{ path('produit_update', {'id': 'ident'}) }}";
+           var url = url.replace("ident", id);
+           var $form = $('#edit_produit_'+id).find('.modal-body').find('form');
+           var formdata = (window.FormData) ? new FormData($form[0]) : null;
+           var data = (formdata !== null) ? formdata : $form.serialize();
+            $.ajax({
+                type: "POST",
+                url: url,
+                contentType: false, // obligatoire pour de l'upload
+                processData: false, // obligatoire pour de l'upload
+                dataType: 'json',
+                data: data,
+                cache: false,
+                success: function(data){
+                    //supprimer la modals apres la Modification
+                    $('#edit_produit_'+id).modal('hide');
+                    $('#produit_tab').html(data.vue);
+
+                }
+            });
+            return false;
+       }
+</script>
+{% endblock %}

@@ -1,0 +1,104 @@
+{% extends "::base.html.twig" %}
+
+
+
+{% block body %}
+    <!--    fichier de gerer panier en table
+        La page qui présent la page panier de projet contient des fonction
+        ajax pour gestion de produit en panier-->
+    {{ parent() }}
+    <div class="container">
+
+
+
+            <div class="span9">
+
+                <h2>Votre panier</h2>
+                <table class="table table-striped table-bordered table-hover" id="tablepanier" >
+
+                    <thead>
+                    <tr>
+                        <th>Libelle</th>
+                        <th>Prix unitaire</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    {% set totalTTC = 0 %}
+                    {% for produit in produits %}
+                        <tr>
+
+                            <td>{{ produit.produit.libelle }}  ( {{ produit.options}} )</td>
+
+                            <td>{{ produit.montant }} €</td>
+                            <td> <a class="btn btn-success" id="{{ produit.id}}" onclick="supprimerpanier({{ produit.id}}) "
+                                    >supprimer</a></td>
+                        </tr>
+
+                        {% set totalTTC = totalTTC + produit.montant %}
+
+                    {% endfor %}
+
+                    <tr>
+                        {% if offres|length != 0 %}
+                            {% if produits|length != 0 %}
+                            <td class="dl-horizontal pull-right">
+                                {% if produits|length ==1 %}
+                                    <span style="color: red;">profitez des offres actives avec l'achat de plus d'un article</span>
+                                    Total TTC : {{ totalTTC }} €
+                                {% endif %}
+                                {% if produits|length ==2 %}
+                                {% set totalTTC = (totalTTC * 9) /10 %}
+                                <span style="color: red;">2 articles achetés : moins 10% des tarifs indiqués</span>
+                                Total TTC : {{ totalTTC }} €
+                                {% endif %}
+                                {% if produits|length ==3 %}
+                                    <span style="color: red;">3 articles achetés : moins 20% des tarifs indiqués</span>
+                                    {% set totalTTC = (totalTTC * 8) /10 %}
+                                    Total TTC : {{ totalTTC }} €
+                                {% endif %}
+                                {% if produits|length >= 4 %}
+                                    <span style="color: red;">4 ou plus articles achetés : moins 30% des tarifs indiqués</span>
+                                    {% set totalTTC = (totalTTC * 7) /10%}
+                                    Total TTC : {{ totalTTC }} €
+                                {% endif %}
+                            </td>
+                            {% endif %}
+                        {% else %}
+                            <td class="dl-horizontal pull-right">
+                                <span style="color: red;">pas d'offre !!!!!!     </span>
+                                Total TTC : {{ totalTTC }} €
+                            </td>
+                        {% endif %}
+                        <div class="clearfix"></div>
+                    </tr>
+                    </tbody>
+
+                </table>
+
+
+                <a href="{{ path('accueil') }}" class="btn btn-primary">Continuer mes achats</a>
+            </div>
+
+    </div>
+{% endblock %}
+{% block stylesheets %}
+    <script>
+        function supprimerpanier(id){
+            confirm('voulez vous vraiment supprimer le produit de votre panier !!');
+            var url = "{{ path('supprimerPanier', {'id': 'ident'}) }}";
+            var url = url.replace("ident", id);
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                cache: false,
+                success: function(data){
+                    $('#tablepanier').html(data.vue);
+                }
+            });
+            return false;
+        }
+    </script>
+{% endblock %}

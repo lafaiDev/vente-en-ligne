@@ -1,0 +1,22 @@
+<div class="well">
+    <ul class="nav nav-list">
+
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <li class="nav nav-list"><a class="brand" href="{{ path('panier') }}">Panier</a> </li>
+        {% else %}
+            <li class="nav nav-list"><a class="brand" href="{{ path('fos_user_security_login') }}">Panier</a> </li>
+        {% endif %}
+        <li id="etats" class="nav nav-list"> </li>
+
+    </ul>
+
+</div>
+<div class="well">
+    <ul class="nav nav-list">
+        <li class="nav-header"><a class="brand" href="{{ path('accueil') }}">Nos produits</a></li>
+        {% render(controller('CatalogueBundle:Categorie:menu')) %}
+
+    </ul>
+
+
+</div>

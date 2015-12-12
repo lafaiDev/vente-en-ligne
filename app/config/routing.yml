@@ -1,0 +1,10 @@
+catalogue:
+    resource: "@CatalogueBundle/Resources/config/routing.yml"
+    prefix:   /
+
+utilisateur:
+    resource: "@UtilisateurBundle/Resources/config/routing.yml"
+    prefix:   /
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

@@ -1,0 +1,37 @@
+{% extends '::baseAdmin.html.twig' %}
+
+{% block body -%}
+    {% include 'UtilisateurBundle:User:modals.html.twig' %}
+    {{ parent() }}
+    <h2>Creation d'un utilisateur</h2>
+<div class="span5 row">
+    {{ form_start(form, {'attr': {'class': 'form-horizontal'} }) }}
+
+    <div class="control-group{% if form.username.vars.errors|length %} error{% endif %}" >
+        {{ form_label(form.username, 'nom', {'label_attr': {'class': 'control-label'} }) }}
+        <div class="controls">
+            {{ form_widget(form.username, {'attr': {'class': 'span3'}}) }} {{ form_errors(form.username) }}
+        </div>
+    </div>
+    <div class="control-group{% if form.email.vars.errors|length %} error{% endif %}" >
+        {{ form_label(form.email, 'email', {'label_attr': {'class': 'control-label'} }) }}
+        <div class="controls">
+            {{ form_widget(form.email, {'attr': {'class': 'span3'}}) }} {{ form_errors(form.email) }}
+        </div>
+    </div>
+    <div class="control-group{% if form.plainPassword.vars.errors|length %} error{% endif %}"  >
+        {{ form_label(form.plainPassword, ' ', {'label_attr': {'class': 'control-label'} }) }}
+        <div class="controls">
+            {{ form_widget(form.plainPassword, {'attr': {'class': 'span3'}}) }} {{ form_errors(form.email) }}
+        </div>
+    </div>
+
+
+
+    {{ form_end(form) }}
+
+</div>
+        <ul class="record_actions">
+
+</ul>
+{% endblock %}

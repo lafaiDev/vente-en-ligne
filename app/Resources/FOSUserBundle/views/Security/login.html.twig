@@ -1,0 +1,31 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+{% if error %}
+    <div xmlns="http://www.w3.org/1999/html">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}
+    <div class="card card-container" style="margin: auto;width:80%">
+        <img id="profile-img" class="profile-img-card" src="{{ asset('img/avatar_2x.png') }}" />
+        <p id="profile-name" class="profile-name-card"></p>
+        <form action="{{ path("fos_user_security_check") }}" method="post" class="'form-signin">
+
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+            <label for="username">{{ 'security.login.username'|trans }}</label>
+            <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+
+            <label for="password">{{ 'security.login.password'|trans }}</label>
+            <input type="password" id="password" name="_password" required="required" />
+
+            <input type="checkbox" id="remember_me" name="_remember_me" value="on" >
+            <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+            </input>
+
+            <input class="btnlogin" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+        </form>
+
+    </div><!-- /card-container -->
+{% endblock fos_user_content %}
+

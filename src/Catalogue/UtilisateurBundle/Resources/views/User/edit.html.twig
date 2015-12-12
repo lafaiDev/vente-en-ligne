@@ -1,0 +1,40 @@
+
+{% extends '::baseAdmin.html.twig' %}
+
+{% block body -%}
+    {% include 'UtilisateurBundle:User:modals.html.twig' %}
+    {{ parent() }}
+
+<div class="span8">
+    <h2>modifier utilisateur</h2>
+
+    {#{ form(edit_form) }#}
+
+    {{ form_start(edit_form, {'attr': {'class': 'form-horizontal'} }) }}
+
+    <div class="control-group{% if edit_form.username.vars.errors|length %} error{% endif %}" >
+        {{ form_label(edit_form.username, 'nom', {'label_attr': {'class': 'control-label'} }) }}
+        <div class="controls">
+            {{ form_widget(edit_form.username, {'attr': {'class': 'span3'}}) }} {{ form_errors(edit_form.username) }}
+        </div>
+    </div>
+    <div class="control-group{% if edit_form.email.vars.errors|length %} error{% endif %}" >
+        {{ form_label(edit_form.email, 'email', {'label_attr': {'class': 'control-label'} }) }}
+        <div class="controls">
+            {{ form_widget(edit_form.email, {'attr': {'class': 'span3'}}) }} {{ form_errors(edit_form.email) }}
+        </div>
+    </div>
+    <div class="control-group{% if edit_form.plainPassword.vars.errors|length %} error{% endif %}"  >
+        {{ form_label(edit_form.plainPassword, 'Mot de passe', {'label_attr': {'class': 'control-label'} }) }}
+        <div class="controls">
+            {{ form_widget(edit_form.plainPassword, {'attr': {'class': 'span3'}}) }} {{ form_errors(edit_form.email) }}
+        </div>
+    </div>
+
+
+
+    {{ form_end(edit_form) }}
+
+</div>
+{% endblock %}
+

@@ -1,0 +1,45 @@
+{% extends '::baseAdmin.html.twig' %}
+
+
+{% block body -%}
+    {{ parent() }}
+    <div class="span8">
+    <h2>Offre liste activer</h2>
+
+        <a class="btn btn-primary" href="{{ path('offre_new') }}" class="btn btn-info btn-small" role="button" data-toggle="modal">
+            courant active
+        </a>
+    <table class="table-striped table-bordered table-hover" style="margin-top: 30px;width: 600px;">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Datedebut</th>
+                <th>Datefin</th>
+                <th>Active</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.nom }}</td>
+                <td>{{ entity.description }}</td>
+                <td>{% if entity.dateDebut %}{{ entity.dateDebut|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.dateFin %}{{ entity.dateFin|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.active }}</td>
+                <td>
+
+                        <a class="btn btn-danger btn-sm" href="#"> <span class="icon-trash "></span></a>
+
+                        <a class="btn btn-info btn-sm" href="{{ path('offre_edit', { 'id': entity.id }) }}"><span class="icon-pencil"></span></a>
+
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+    </div>
+    {% endblock %}

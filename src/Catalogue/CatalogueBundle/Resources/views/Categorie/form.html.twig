@@ -1,0 +1,11 @@
+
+    {{ form_start(form, {'attr': {'class': 'form-horizontal'} }) }}
+
+        <div class="control-group{% if form.nom.vars.errors|length %} error{% endif %}" >
+            {{ form_label(form.nom, 'nom', {'label_attr': {'class': 'control-label'} }) }}
+            <div class="controls">
+                {{ form_widget(form.nom, {'attr': {'class': 'span3'}}) }} {{ form_errors(form.nom) }}
+            </div>
+        </div>
+
+    {{ form_end(form) }}

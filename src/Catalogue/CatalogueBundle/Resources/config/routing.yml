@@ -1,0 +1,39 @@
+catalogue_offre:
+    resource: "@CatalogueBundle/Resources/config/routing/offre.yml"
+    prefix:   /admin/offre
+
+catalogue_categorie:
+    resource: "@CatalogueBundle/Resources/config/routing/categorie.yml"
+    prefix:   /admin/categorie
+
+catalogue_produitOption:
+    resource: "@CatalogueBundle/Resources/config/routing/produitoption.yml"
+    prefix:   /admin/produitOption
+
+catalogue_produit:
+    resource: "@CatalogueBundle/Resources/config/routing/produit.yml"
+    prefix:   /admin/produit
+
+panier:
+    pattern:  /panier
+    defaults: { _controller: CatalogueBundle:Panier:panier }
+
+accueil:
+    path:     /
+    defaults: { _controller: CatalogueBundle:Produit:allProduits }
+
+produitsCategorie:
+    path:     /produitsCategorie
+    defaults: { _controller: CatalogueBundle:Produit:produits }
+
+categorieProduits:
+    pattern:  /categorie/{categorie}
+    defaults: { _controller: CatalogueBundle:Produit:produits }
+
+ajouterPanier:
+    pattern:  /ajouter/{id}
+    defaults: { _controller: CatalogueBundle:Panier:ajouter }
+
+supprimerPanier:
+    pattern:  /supprimer/{id}
+    defaults: { _controller: CatalogueBundle:Panier:supprimer }

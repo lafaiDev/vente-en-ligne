@@ -1,0 +1,18 @@
+
+    {{ form_start(form, {'attr': {'class': 'form-horizontal'} }) }}
+
+        <div class="control-group{% if form.username.vars.errors|length %} error{% endif %}" >
+            {{ form_label(form.username, 'nom', {'label_attr': {'class': 'control-label'} }) }}
+            <div class="controls">
+                {{ form_widget(form.username, {'attr': {'class': 'span3'}}) }} {{ form_errors(form.username) }}
+            </div>
+        </div>
+        <div class="control-group{% if form.email.vars.errors|length %} error{% endif %}" >
+            {{ form_label(form.email, 'email', {'label_attr': {'class': 'control-label'} }) }}
+            <div class="controls">
+                {{ form_widget(form.email, {'attr': {'class': 'span3'}}) }} {{ form_errors(form.email) }}
+            </div>
+        </div>
+
+
+    {{ form_end(form) }}

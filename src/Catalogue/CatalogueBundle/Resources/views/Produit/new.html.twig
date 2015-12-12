@@ -1,0 +1,82 @@
+{% extends '::base.html.twig' %}
+<!--j'ai personaliser le form de produit -->
+{% form_theme form.optionsProduit 'CatalogueBundle:Produit:option.html.twig' %}
+{% block body -%}
+   {% include "CtalogueBundle:Produit:form.html.twig" %}
+        <ul class="record_actions">
+            <li>
+                <a href="{{ path('produit') }}">
+
+                </a>
+            </li>
+        </ul>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <!--fonction js qui permette de crre un table pour ajouter les option aux moment de creation des produit-->
+    <script>
+        jQuery(function($){
+            // On récupère la balise <div> en question qui contient l'attribut « data-prototype » qui nous intéresse.
+            var $container = $('#catalogue_cataloguebundle_produit_optionsProduit');
+
+
+            // On ajoute un lien pour ajouter une nouvelle catégorie
+            var $lienAjout = $('<a href="#" id="ajout_frais_annexe" class="btn">Ajouter une option</a>');
+            $container.after($lienAjout);
+
+            // On ajoute un nouveau champ à chaque clic sur le lien d'ajout.
+            $lienAjout.click(function(e) {
+                ajouter($container);
+                e.preventDefault(); // évite qu'un # apparaisse dans l'URL
+                return false;
+            });
+
+            // On définit un compteur unique pour nommer les champs qu'on va ajouter dynamiquement
+            var index = $container.find(':input').length;
+
+            // On ajoute un premier champ directement s'il n'en existe pas déjà un (cas d'un nouvel article par exemple).
+            if (index == 0) {
+            } else {
+                // Pour chaque catégorie déjà existante, on ajoute un lien de suppression
+                $container.children('tbody').children('tr').each(function() {
+                    ajouterLienSuppression($(this));
+                });
+            }
+
+            // La fonction qui ajoute un formulaire FactureClientPrestation
+            function ajouter($container) {
+                // Dans le contenu de l'attribut « data-prototype », on remplace :
+                // - le texte "__name__label__" qu'il contient par le label du champ
+                // - le texte "__name__" qu'il contient par le numéro du champ
+                var $prototype = $($container.attr('data-prototype').replace(/__name__label__/g, 'Option n°' + (index+1))
+                        .replace(/__name__/g, index));
+
+                // On ajoute au prototype un lien pour pouvoir supprimer la catégorie
+                ajouterLienSuppression($prototype);
+
+                // On ajoute le prototype modifié à la fin de la balise <div>
+                $container.append($prototype);
+
+                // Enfin, on incrémente le compteur pour que le prochain ajout se fasse avec un autre numéro
+                index++;
+            }
+
+            // La fonction qui ajoute un lien de suppression d'une catégorie
+            function ajouterLienSuppression($prototype) {
+                // Création du lien
+                $lienSuppression = $('<td><a href="#" class="close">&times</a></td>');
+
+                // Ajout du lien
+                $prototype.append($lienSuppression);
+
+                // Ajout du listener sur le clic du lien
+                $lienSuppression.click(function(e) {
+                    $prototype.remove();
+                    e.preventDefault(); // évite qu'un # apparaisse dans l'URL
+                    return false;
+                });
+            }
+        });
+
+    </script>
+{% endblock %}

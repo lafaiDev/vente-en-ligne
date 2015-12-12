@@ -1,0 +1,30 @@
+produitOption:
+    path:     /
+    defaults: { _controller: "CatalogueBundle:ProduitOption:index" }
+
+produitOption_show:
+    path:     /{id}/show
+    defaults: { _controller: "CatalogueBundle:ProduitOption:show" }
+
+produitOption_new:
+    path:     /new
+    defaults: { _controller: "CatalogueBundle:ProduitOption:new" }
+
+produitOption_create:
+    path:     /create
+    defaults: { _controller: "CatalogueBundle:ProduitOption:create" }
+    methods:  POST
+
+produitOption_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "CatalogueBundle:ProduitOption:edit" }
+
+produitOption_update:
+    path:     /{id}/update
+    defaults: { _controller: "CatalogueBundle:ProduitOption:update" }
+    methods:  [POST, PUT]
+
+produitOption_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "CatalogueBundle:ProduitOption:delete" }
+    methods:  [POST, DELETE]

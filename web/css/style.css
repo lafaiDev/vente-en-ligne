@@ -1,0 +1,27 @@
+body {
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+
+.loading {
+    float:right;
+    margin-right:115px;
+    width:30px;
+    height:30px;
+    display:block;
+    background:url('../img/loading.gif');
+}
+
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+.btnlogin {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}

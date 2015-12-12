@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca9e4717-4168-4bc4-8289-65f615b08804" name="Default" comment="" />
+    <ignored path="vente_en_ligne_v1.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="vente_en_ligne_v1" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="18" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="442">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utilisateurs.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/menu/utilisateurs.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="21" selection-start="128" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navigation.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/navigation.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="53" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="476">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedirectionListener.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Listener/RedirectionListener.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="18" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="748">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="61" selection-start="2040" selection-end="2086" vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="1122">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/config/services.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="64" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Produit.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Entity/Produit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="4" selection-start="522" selection-end="698" vertical-scroll-proportion="-4.769231" vertical-offset="386" max-vertical-offset="3060">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Photo.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Entity/Photo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="12" selection-start="271" selection-end="292" vertical-scroll-proportion="0.31546393" vertical-offset="51" max-vertical-offset="2788">
+              <folding>
+                <element signature="e#52#84#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changePassword.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/changePassword.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="28" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="187">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="s debug:router " />
+      <command text="s doctrine:generate:crud " />
+      <command text="s debug:router " />
+      <command text="s doctrine:generate:crud " />
+      <command text="s debug:router " />
+      <command text="s cache:clear" />
+      <command text="s fos:user:promote admin ROLE_ADMIN" />
+      <command text="s cache:clear" />
+      <command text="s debug:router " />
+      <command text="s doctrine:generate:crud " />
+      <command text="s cache:clear" />
+      <command text="s debug:router " />
+      <command text="s doctrine:generate:crud " />
+      <command text="s debug:router " />
+      <command text="s doctrine:schema:update --force" />
+      <command text="console doctrine:generate:entities UtilisateurBundle:User" />
+      <command text="s doctrine:generate:entities UtilisateurBundle:User" />
+      <command text="s cache:clear" />
+      <command text="s doctrine:generate:crud UtilisateurBundle:Group" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entity CatalogueBundle:Offre" />
+      <command text="s doctrine:generate:entity " />
+      <command text="s doctrine:generate:crud " />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s cache:clear" />
+    </commandsHistory>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/Catalogue/UtilisateurBundle/Controller/AuthenticationSuccessHandler .php" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Form/OffreType.php" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Offre/offrescourant.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Offre/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Entity/ProduitRepository.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/baseAdmin.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Categorie/table.html.twig" />
+        <option value="$PROJECT_DIR$/web/js/main.js" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Entity/OffreRepository.php" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/config/routing/offre.yml" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Offre/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/UtilisateurBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Catalogue/UtilisateurBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Catalogue/UtilisateurBundle/Resources/views/User/form.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/UtilisateurBundle/Form/UserType.php" />
+        <option value="$PROJECT_DIR$/src/Catalogue/UtilisateurBundle/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/src/Catalogue/UtilisateurBundle/Resources/views/User/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Panier/etats.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/navigationAdmin.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/UtilisateurBundle/Resources/views/User/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Panier/table.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/UtilisateurBundle/Resources/views/User/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Produit/commande.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/menu/navbaretop.html.twg" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/menu/panier.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/menu/utilisateurs.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/menu/utilisateursConnecte.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Controller/CategorieController.php" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Controller/PanierController.php" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Controller/ProduitController.php" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Controller/OffreController.php" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/config/routing/categorie.yml" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Produit/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Panier/panier.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Produit/produits.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Produit/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Offre/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Offre/offresactive.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Categorie/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/changePassword.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Listener/RedirectionListener.php" />
+        <option value="$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/navigation.html.twig" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vente_en_ligne_v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vente_en_ligne_v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vente_en_ligne_v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vente_en_ligne_v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vente_en_ligne_v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vente_en_ligne_v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vente_en_ligne_v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Catalogue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vente_en_ligne_v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vente_en_ligne_v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Catalogue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CatalogueBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vente_en_ligne_v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vente_en_ligne_v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Catalogue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CatalogueBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../project_doctor" />
+    <property name="options.lastSelected" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="&lt;" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\vente_en_ligne_v1\src\Catalogue\CatalogueBundle\Resources\views\Offre" />
+      <recent name="C:\wamp\www\vente_en_ligne_v1\src\Catalogue\UtilisateurBundle\Resources\views\User" />
+      <recent name="C:\wamp\www\vente_en_ligne_v1\web\js" />
+      <recent name="C:\wamp\www\vente_en_ligne_v1\src\Catalogue\UtilisateurBundle\Resources\views" />
+      <recent name="C:\wamp\www\vente_en_ligne_v1\src\Catalogue\UtilisateurBundle\Resources\views\Utilisateur" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\vente_en_ligne_v1\web\img" />
+      <recent name="C:\wamp\www\vente_en_ligne_v1\src\Catalogue\UtilisateurBundle\Resources\views\User" />
+      <recent name="C:\wamp\www\vente_en_ligne_v1\src\Catalogue\UtilisateurBundle\Resources\views" />
+      <recent name="C:\wamp\www\vente_en_ligne_v1\src\Catalogue\UtilisateurBundle\Resources\translations" />
+      <recent name="C:\wamp\www\vente_en_ligne_v1\src\Catalogue\UtilisateurBundle\Resources\config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca9e4717-4168-4bc4-8289-65f615b08804" name="Default" comment="" />
+      <created>1448721968741</created>
+      <updated>1448721968741</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30746704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13622291" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="554" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13467492" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Controller/ProduitController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="272" column="9" selection-start="10047" selection-end="10047" vertical-scroll-proportion="-16.153847" vertical-offset="4119" max-vertical-offset="4692" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Form/PhotoType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Form/ProduitType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Form/ProduitOptionType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="25" selection-start="495" selection-end="495" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/3abf4a8a3c4146d81a680c47fe2922c8733c51d6.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/3ee56d9363c62fb16e19a6c09197ac1d650d8bb6.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/29af8164fd092b2355de11f0144b04a3c0ca3d96.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/aa3fa5b6ececbb5026b7c5c9e90483918606e91b.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/a12eca0679fafd787f0ab3753301efd348f3c615.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/a7ccd61c8a31898506461a85b7167d439fca23f8.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/ac3b0e3fa624455d74b1a012fd65a7848b539ae2.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/b0974189568b2db1ef490598f8d2734f9d762d17.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/ffb04dc3927880e5a12748897a40439abdcb05cd.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/ce7f82ce3fb97869715353d249fc4dfb90785a00.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/c719c576f77b243ee51be6ca4280a73d5a49f542.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Controller/OffreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="228" column="1" selection-start="6491" selection-end="6491" vertical-scroll-proportion="0.78938055" vertical-offset="3362" max-vertical-offset="3927" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Controller/ProduitOptionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="126.03846" vertical-offset="3277" max-vertical-offset="3842" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/config/routing/produitoption.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="15" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/UtilisateurBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="113.80769" vertical-offset="3163" max-vertical-offset="3757" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/UtilisateurBundle/Resources/views/User/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="53" selection-start="661" selection-end="661" vertical-scroll-proportion="-1.7307693" vertical-offset="261" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Entity/PhotoRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="599" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0642978" vertical-offset="149" max-vertical-offset="748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/config/routing/categorie.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="3" selection-start="577" selection-end="577" vertical-scroll-proportion="0.6615905" vertical-offset="0" max-vertical-offset="612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Produit/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="39" selection-start="2004" selection-end="2004" vertical-scroll-proportion="-9.705882" vertical-offset="287" max-vertical-offset="1479" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Produit/modals.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="809" selection-end="809" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Produit/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="215" selection-end="215" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="3587" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Categorie/form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Panier/etats.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="599" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Panier/table.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="8" selection-start="2314" selection-end="2314" vertical-scroll-proportion="1.2037038" vertical-offset="322" max-vertical-offset="1139" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Offre/modals.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Offre/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="599" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Offre/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Offre/offrescourant.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Offre/offresactive.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="120" selection-end="120" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Offre/table.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Panier/panier.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="49" selection-start="57" selection-end="222" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="1853" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Categorie/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="49" selection-start="5167" selection-end="5167" vertical-scroll-proportion="0.40254238" vertical-offset="2207" max-vertical-offset="2822" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Offre/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="110" selection-end="124" vertical-scroll-proportion="0.0720339" vertical-offset="51" max-vertical-offset="1020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/changePassword_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="498">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/changePassword.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="28" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/views/Produit/produits.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="3" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="2380" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="61" selection-start="2040" selection-end="2086" vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="18" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/menu/utilisateurs.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="21" selection-start="128" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/navigation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="53" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Listener/RedirectionListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="18" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="64" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Entity/Produit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="4" selection-start="522" selection-end="698" vertical-scroll-proportion="-4.769231" vertical-offset="386" max-vertical-offset="3060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Catalogue/CatalogueBundle/Entity/Photo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="12" selection-start="271" selection-end="292" vertical-scroll-proportion="0.31546393" vertical-offset="51" max-vertical-offset="2788">
+          <folding>
+            <element signature="e#52#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

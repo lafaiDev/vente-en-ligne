@@ -1,0 +1,12 @@
+{% extends '::baseAdmin.html.twig' %}
+
+
+{% block body -%}
+    {{ parent() }}
+<div class="span8">
+    <h1>Offre edit</h1>
+
+    {{ form(edit_form) }}
+
+    </div>
+{% endblock %}

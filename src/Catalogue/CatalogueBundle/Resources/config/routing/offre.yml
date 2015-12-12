@@ -1,0 +1,38 @@
+offre:
+    path:     /
+    defaults: { _controller: "CatalogueBundle:Offre:index" }
+
+offre_active:
+    path:     /active
+    defaults: { _controller: "CatalogueBundle:Offre:offreactive" }
+
+offre_courant:
+    path:     /courant
+    defaults: { _controller: "CatalogueBundle:Offre:offrecorent" }
+
+offre_show:
+    path:     /{id}/show
+    defaults: { _controller: "CatalogueBundle:Offre:show" }
+
+offre_new:
+    path:     /new
+    defaults: { _controller: "CatalogueBundle:Offre:new" }
+
+offre_create:
+    path:     /create
+    defaults: { _controller: "CatalogueBundle:Offre:create" }
+    methods:  POST
+
+offre_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "CatalogueBundle:Offre:edit" }
+
+offre_update:
+    path:     /{id}/update
+    defaults: { _controller: "CatalogueBundle:Offre:update" }
+    methods:  [POST, PUT]
+
+offre_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "CatalogueBundle:Offre:delete" }
+    methods:  [POST, DELETE]

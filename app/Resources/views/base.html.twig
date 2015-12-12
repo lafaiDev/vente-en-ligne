@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- template pour les clients et l'utilisateurs simple-->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}vente en ligne{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-responsive.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/ui-lightness/jquery-ui.css" type="text/css" media="all"/>
+    </head>
+    <body style="background-color: aliceblue">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <!-- test avec moteur de template twig si le role et admin-->
+                {% if is_granted('ROLE_ADMIN') %}
+                    <a class="brand " href="{{ path('produit') }}">Administration</a>
+                    <button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button">
+                        <span class="icon-bar">1</span>
+                        <span class="icon-bar">2</span>
+                        <span class="icon-bar">3</span>
+                    </button>
+                {% else %}
+                    <a class="brand " href="{{ path('accueil') }}">Vente En ligne</a>
+                {% endif %}
+            </div>
+        </div>
+
+    </div>
+
+        {% block body %}
+
+            <div class="span3">
+                {% include '::navigation.html.twig' %}
+                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                    <!-- menu de utilisateur conecter-->
+                    {% include '::menu/utilisateursConnecte.html.twig' %}
+
+                {% else %}
+                    <!-- menu de utilisateur non conecter-->
+                    {% include '::menu/utilisateurs.html.twig' %}
+                {% endif %}
+            </div>
+        {% endblock %}
+        {% block javascripts %}
+            <!-- les  js de l'application-->
+            <script src="{{ asset('js/jquery-1.10.0.min.js') }}"></script>
+            <script src="{{ asset('js/bootstrap.js') }}"></script>
+            <script src="{{ asset('js/main.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/bootstrap-datepicker.js') }}"></script>
+            <script src="{{ asset('js/jquery-ui.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>

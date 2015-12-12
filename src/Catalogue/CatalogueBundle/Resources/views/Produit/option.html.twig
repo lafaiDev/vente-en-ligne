@@ -1,0 +1,52 @@
+{% block collection_widget %}
+{% spaceless %}
+<div class="collection">
+    {% if prototype is defined %}
+        {% set attr = attr|merge({'data-prototype': block('collection_item_widget') }) %}
+    {% endif %}
+    <table class="table table-bordered table-condensed" {{ block('widget_container_attributes') }}>
+        {{ form_errors(form) }}
+        <thead>
+        <tr>
+            {% for rows in form.vars.prototype %}
+                <th>
+                    {{ form_label(rows) }}
+                </th>
+            {% endfor %}
+            <th><span class="close">&times</span></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for rows in form %}
+            <tr>
+                {% set fieldNum = 1 %}
+                {% for row in rows %}
+                    <td class="field{{ fieldNum }}">
+                        {{ form_widget(row) }}
+                    </td>
+                    {% set fieldNum = fieldNum + 1 %}
+                {% endfor %}
+                <div class="clear"></div>
+            </tr>
+        {% endfor %}
+        </tbody>
+        {{ form_rest(form) }}
+    </table>
+    <div class="clear"></div>
+    {% endspaceless %}
+    {% endblock collection_widget %}
+
+    {% block collection_item_widget %}
+    {% spaceless %}
+        <tr>
+            {% set fieldNum = 1 %}
+            {% for row in prototype %}
+                <td class="field{{ fieldNum }}">
+                    {{ form_widget(row) }}
+                </td>
+                {% set fieldNum = fieldNum + 1 %}
+            {% endfor %}
+            <div class="clear"></div>
+        </tr>
+    {% endspaceless %}
+{% endblock collection_item_widget %}

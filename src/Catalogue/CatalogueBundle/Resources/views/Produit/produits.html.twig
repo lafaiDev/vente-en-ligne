@@ -1,0 +1,135 @@
+{% extends "::base.html.twig" %}
+
+{% block body%}
+    <!--
+NB:  les fonction ajax existe dans block stylesheets en bas de la page
+                La page qui présent la page d’accueil de projet
+                contient des fonction ajax pour gestion de produit et l’ajout dans panier.
+
+-->
+    {{ parent() }}
+    <div class="container">
+        <div class="row">
+
+
+
+<div class="span7" >
+
+        <H3>Notre Catalogue</H3>
+    <!-- ppour afficher les offres il faut que la date d'aujourd’hui appartiens aux date de promotion activer-->
+    {% if offrescourant|length != 0 %}
+    <div class="well-small well" style="background-color:powderblue">
+        2 articles achetés : moins 10% des tarifs indiqués<br/>
+        3 articles achetés : moins 20% des tarifs indiqués<br/>
+        4 articles achetés : moins 30% des tarifs indiqués<br/>
+    </div>
+    {% endif %}
+        <!--presentation des produits-->
+        {% if produits|length != 0 %}
+            <ul class="thumbnails">
+                {% for produit in produits %}
+            <li class="span7 thumbnail">
+                <div class=" span3">
+                    <img src="{{ asset(produit.photo.AssetPath)}}" alt="{{ produit.photo.name }}" width="250px" height="150">
+                </div>
+            <div class="caption">
+                <h4>{{ produit.libelle }}</h4>
+                <p> {% for optionpro in produit.optionsProduit %}
+                      <table style="width: 350px;">
+                        <tr>
+                            <td style="width: 250px">
+                        {{ optionpro.options }}
+                            </td>
+                            <td style="width: 50px">
+                        {{ optionpro.montant }}€
+                             </td>
+                            <td style="width: 50px" id="{{ optionpro.id}}">
+                            {# je teste si l'utilisateur connecter si non envoyer vers la page d'authentification#}
+                            {% if is_granted('ROLE_USER') %}
+                                                <!-- test si id de produit existe a la table de sission changer le color de btn-->
+                                    {% if app.session.get('panier')[optionpro.id] is defined %}
+
+                                            <a class="btn btn-danger" onClick="return confirm('le produit et dejat commandé!!')" >Commandé</a>
+                                     {% else %}
+                                         <a class="btn btn-success" id="{{ optionpro.id}}" onclick="ajouterpanier({{ optionpro.id}})">Commander</a>
+                                     {% endif %}
+
+                            {% else %}
+                                <a class="btn btn-success" href="{{ path('fos_user_security_login') }}" >Commander</a>
+                            {% endif %}
+                            </td>
+                        </tr>
+                      </table>
+
+                    {% endfor %}
+
+                    </p>
+
+
+                 </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <!-- pagination-->
+        <div class="navigation">
+        <!-- pour  traduit les elment de pagination j'ai utiliser (Resources/translations/messages-->
+            {{ knp_pagination_render(produits) }}
+        </div>
+
+        {% else %}
+           <div style="text-align:center" ><h2> Aucun produit n'est disponible !</h2></div>
+        {% endif %}
+
+
+
+    </div>
+<div class="span2" style="color:red">
+    {% if offres|length != 0 %}
+    <div class="well">
+        <p >
+            Semaines promotionnelles valable pour l’ensemble de nos
+            produit
+        </p>
+        <table>
+            {% for offre in offres %}
+                <tr> <td>du {{ offre.dateDebut|date('m-d') }}</td><td>au {{ offre.dateFin|date('m-d') }}</td></tr>
+            {% endfor %}
+        </table>
+
+    </div>
+    {% endif %}
+
+</div>
+</div>
+
+    </div>
+
+{% endblock %}
+{% block stylesheets %}
+   <script>
+       //ajouter  aux panier par ajax (commander un produit)
+       function ajouterpanier(id){
+          //declaration var url
+           var url1 = "{{ path('ajouterPanier', {'id': 'ident'}) }}";
+           var url = url1.replace("ident", id);
+           $.ajax({
+               type: "POST",
+               url: url,
+               cache: false,
+               beforeSend: function() {
+                   if ($(".loading").length == 0) {
+                       $("form .libelle").parent().append('<div class="loading"></div>');
+                   }
+
+               },
+               success: function(data){
+                   $('#etats').html(data.vue);
+                   $('#'+id).html(data.cmd);
+
+                   $(".loading").remove();
+               }
+           });
+           return false;
+       }   </script>
+
+{% endblock %}

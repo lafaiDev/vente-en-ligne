@@ -1,0 +1,4 @@
+utilisateur_utilisateur:
+    resource: "@UtilisateurBundle/Resources/config/routing/user.yml"
+    prefix:   /admin/utilisateur
+

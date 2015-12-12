@@ -1,0 +1,47 @@
+
+{% extends '::baseAdmin.html.twig' %}
+
+{% block body -%}
+    {% include 'UtilisateurBundle:User:modals.html.twig' %}
+    {{ parent() }}
+
+    <div class="span8">
+        <h2> Liste des Utilisateur</h2>
+        <a href="{{ path('utilisateur_new') }}" class="btn btn-primary" role="button" data-toggle="modal">
+            ajouter un Utilisateur
+        </a>
+        <table class="table-striped table-bordered table-hover" style="margin-top: 30px;width: 600px;" id="">
+            <thead>
+            <tr>
+
+                <th style="width: 150px;">Nom</th>
+                <th style="width: 150px;">mail</th>
+                <th style="width: 60px;">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for entity in entities %}
+
+                <tr>
+
+                    <td>{{ entity.username }}</td>
+                    <td>{{ entity.email }}</td>
+                    <td>
+
+                        <form action="{{ path('utilisateur_edit', { 'id': entity.id }) }}" method="POST">
+                            <input class=" btn btn-info btn-sm" type="submit" value=" Modifier">
+                        </form>
+                        <form action="{{ path('utilisateur_delete', { 'id': entity.id }) }}" method="POST">
+                            <input class=" icon-trash btn btn-danger btn-sm" type="submit" value="Supprimer" onClick="return confirm('voulez vous vraiment supprimer !!')">
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,30 @@
+produit:
+    path:     /
+    defaults: { _controller: "CatalogueBundle:Produit:index" }
+
+produit_show:
+    path:     /{id}/show
+    defaults: { _controller: "CatalogueBundle:Produit:show" }
+
+produit_new:
+    path:     /new
+    defaults: { _controller: "CatalogueBundle:Produit:new" }
+
+produit_create:
+    path:     /create
+    defaults: { _controller: "CatalogueBundle:Produit:create" }
+    methods:  POST
+
+produit_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "CatalogueBundle:Produit:edit" }
+
+produit_update:
+    path:     /{id}/update
+    defaults: { _controller: "CatalogueBundle:Produit:update" }
+    methods:  [POST, PUT]
+
+produit_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "CatalogueBundle:Produit:delete" }
+    methods:  [POST, DELETE]

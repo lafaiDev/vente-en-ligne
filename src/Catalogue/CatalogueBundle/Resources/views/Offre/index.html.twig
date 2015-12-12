@@ -1,0 +1,54 @@
+{% extends '::baseAdmin.html.twig' %}
+
+
+{% block body %}
+    <!--fichier de l'administration des offre-->
+    {{ parent() }}
+    <div class="span8">
+    <h2>Offre list</h2>
+
+        <a class="btn btn-primary" href="{{ path('offre_new') }}" class="btn btn-info btn-small" role="button" data-toggle="modal">
+            ajouter un Offre
+        </a>
+    <table class="table-striped table-bordered table-hover" style="margin-top: 30px;width: 600px;">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Datedebut</th>
+                <th>Datefin</th>
+                <th>Active</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.nom }}</td>
+                <td>{{ entity.description }}</td>
+                <td>{% if entity.dateDebut %}{{ entity.dateDebut|date('Y-m-d') }}{% endif %}</td>
+                <td>{% if entity.dateFin %}{{ entity.dateFin|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ entity.active }}</td>
+                <td>
+                    <form action="{{ path('offre_edit', { 'id': entity.id }) }}" method="POST">
+
+                        <input class="btn btn-info btn-sm" type="submit" value="  Modifier ">
+                    </form>
+
+                    <form action="{{ path('offre_delete', { 'id': entity.id }) }}" method="POST">
+
+                        <input class="btn btn-danger btn-sm" type="submit" value="Supprimer" onClick="return confirm('voulez vous vraiment supprimer !!')">
+                    </form>
+
+
+
+
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+    </div>
+    {% endblock %}
